@@ -21,7 +21,7 @@ body {
 /* .mascot and .plain will be added to element 'main' by javascript in
     addition to a random mascot */
 .mascot {
-    padding: 20px 20px 20px 350px;
+    padding: 20px 20px 20px 400px;
 }
 
 .plain {
@@ -195,6 +195,9 @@ nav {
     border-right-width: 1px;
     border-right-style: solid;
     padding: 0 10px;
+}
+.row{
+    display: table-row;
 }
 
 .column:last-of-type {
