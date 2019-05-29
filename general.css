@@ -2,6 +2,9 @@
     This work is free. You can redistribute it and/or modify it under the
     terms of the Do What The Fuck You Want To Public License, Version 2,
     as published by Sam Hocevar. See the COPYING file for more details. */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html {
     height: 100%;
     margin: 0;
@@ -13,15 +16,26 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0;
-    font-family: Tahoma;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     border: 0;
+}
+
+#bg {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: scroll; 
+    background-size: 100% 100vh;
 }
 
 /* .mascot and .plain will be added to element 'main' by javascript in
     addition to a random mascot */
 .mascot {
-    padding: 20px 20px 20px 350px;
+    padding: 20px 20px 20px 400px;
 }
 
 .plain {
@@ -36,7 +50,10 @@ main {
     background-repeat: no-repeat;
     border-width: 1px;
     border-style: solid;
+    border-radius: 5px;
     margin: 10vh 0 0 0;
+    position: relative;
+    padding: 0px;
 }
 
 header {
@@ -195,6 +212,9 @@ nav {
     border-right-width: 1px;
     border-right-style: solid;
     padding: 0 10px;
+}
+.row{
+    display: table-row;
 }
 
 .column:last-of-type {

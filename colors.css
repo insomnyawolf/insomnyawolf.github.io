@@ -4,7 +4,7 @@
     as published by Sam Hocevar. See the COPYING file for more details. */
 
 body {
-    background: #1D1F21;
+    background-color: #000000D0
 }
 
 .name-highlight {
@@ -12,8 +12,12 @@ body {
 }
 
 main {
-    background-color: #282A2E;
     border-color: #373B41;
+    background-color: #000000E0
+}
+
+#bg {
+    background-color: #000;
 }
 
 h1 {
@@ -55,7 +59,10 @@ h1 {
     background-image: url('resources/icons/youtube.png');
 }
 .search_wikipedia {
-    background-image: url('resources/icons/wikipedia.jpg');
+    background-image: url('resources/icons/wikipedia.png');
+}
+.search_stackoverflow {
+    background-image: url('resources/icons/stackoverflow.png');
 }
 
 /* Grey button */
@@ -116,7 +123,7 @@ h1 {
 }
 .column > a,
 .column > ul > li:before {
-    color: #1D1F21;
+    color: #cccccc;
 }
 .column > a {
     text-shadow: 0 0.5px #373B41;
