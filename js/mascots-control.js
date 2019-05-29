@@ -27,26 +27,26 @@ function removeMascot() {
 }
 
 
-function controlBackground(mascot, mascotMinWidth) {
+function controlBackground(background, backgroundMinWidth) {
     $(window).resize(function(event) {
-        if ( $(window).width() <= mascotMinWidth && $("main").hasClass("mascot") ) {
-            removeMascot();
-        } else if( $(window).width() > mascotMinWidth && ! $("main").hasClass("mascot") ) {
-            setMascot(mascot);
+        if ( $(window).width() <= backgroundMinWidth && $("#bg").hasClass("background") ) {
+            removeBackground();
+        } else if( $(window).width() > backgroundMinWidth && ! $("#bg").hasClass("background") ) {
+            setBackground(background);
         }
     });
 }
 
 function setBackground(background) {
-    $('background').addClass("background");
-    $('background').css("background-image", "url(" + background + ")");
-    $('background').removeClass("plain");
+    $('#bg').addClass("background");
+    $('#bg').css("background-image", "url(" + background + ")");
+    $('#bg').removeClass("plain");
 }
 
 function removeBackground() {
-    $('main').removeClass("background");
-    $('main').css("background-image", "");
-    $('main').addClass("plain");
+    $('#bg').removeClass("background");
+    $('#bg').css("background-image", "");
+    $('#bg').addClass("plain");
 }
 
 
@@ -54,9 +54,9 @@ $(document).ready(function(event) {
     var mascotEnable    = true;
 
     var mascot          = mascotPath + mascotList[Math.floor(Math.random() * mascotList.length)];
-    var mascotMinWidth  = 500;
+    var mascotMinWidth  = 1280;
 
-    var background      = mascotPath + backgroundList[Math.floor(Math.random() * backgroundList.length)];
+    var background      = backgroundPath + backgroundList[Math.floor(Math.random() * backgroundList.length)];
 
     setBackground(background);
 

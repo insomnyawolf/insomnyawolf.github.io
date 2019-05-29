@@ -1,8 +1,6 @@
-var backgroundsList = [ 
-    "1.png", 
-    "2.png", 
-    "3.png", 
+var backgroundList = [ 
+    "1.jpg", 
+    "2.jpg", 
+    "3.jpg", 
     "4.png", 
-    "5.png", 
-    "6.png", 
 ];
