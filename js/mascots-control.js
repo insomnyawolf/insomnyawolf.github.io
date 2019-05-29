@@ -26,11 +26,39 @@ function removeMascot() {
     $('main').addClass("plain");
 }
 
+
+function controlBackground(mascot, mascotMinWidth) {
+    $(window).resize(function(event) {
+        if ( $(window).width() <= mascotMinWidth && $("main").hasClass("mascot") ) {
+            removeMascot();
+        } else if( $(window).width() > mascotMinWidth && ! $("main").hasClass("mascot") ) {
+            setMascot(mascot);
+        }
+    });
+}
+
+function setBackground(background) {
+    $('background').addClass("background");
+    $('background').css("background-image", "url(" + background + ")");
+    $('background').removeClass("plain");
+}
+
+function removeBackground() {
+    $('main').removeClass("background");
+    $('main').css("background-image", "");
+    $('main').addClass("plain");
+}
+
+
 $(document).ready(function(event) {
     var mascotEnable    = true;
 
     var mascot          = mascotPath + mascotList[Math.floor(Math.random() * mascotList.length)];
     var mascotMinWidth  = 500;
+
+    var background      = mascotPath + backgroundList[Math.floor(Math.random() * backgroundList.length)];
+
+    setBackground(background);
 
     if ( mascotEnable ) {
         setMascot(mascot);
