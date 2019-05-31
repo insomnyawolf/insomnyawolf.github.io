@@ -14,13 +14,16 @@ Ok:
     @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 Slim:
 Scy-Fy:
     @import url('https://fonts.googleapis.com/css?family=Monofett&display=swap');
 */
 
-@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html {
     height: 100%;
@@ -34,7 +37,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     border: 0;
 }
@@ -243,13 +246,14 @@ nav {
     border-right-width: 0;
 }
 .column > a {
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     text-align: center;
     text-decoration: none;
     padding-bottom: 4px;
     font-size: 24px;
     font-weight: bold;
-    transition: all 0.8s;
+    transition: all 0.5s ease-in-out;  
 }
 
 .column > ul > li {

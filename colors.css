@@ -1,55 +1,87 @@
 /*  Copyright 2014 gokoururi
     This work is free. You can redistribute it and/or modify it under the
     terms of the Do What The Fuck You Want To Public License, Version 2,
-    as published by Sam Hocevar. See the COPYING file for more details. */
+    as published by Sam Hocevar. See the COPYING file for more details.
+*/
+
+:root {
+    /* Colors */
+    --PBlack: #000;
+    --PBlackT20: #000000D0;
+    --White: #FFF;
+    --Pink: #d67b96;
+    --GreyLight: lightgrey;
+    --Grey: #646464;
+    --GreyDark: #373B41;
+    --Transparent: transparent;
+
+    /* Items */
+    /* Global */ 
+    /* Body */
+
+    /* Main */
+    --MainBorder: var(--GreyDark);
+    --MainBackground: var(--PBlackT20);
+    
+    /* Text */
+    --TextHighlight : var(--Pink);
+    --TextMain: var(--White);
+    
+    /* Search */
+    --SearchFocus: var(--Grey);
+    --Search: var(--Transparent);
+    --SearchBorder: var(--GreyLight);
+    
+    /* Button */
+    --ButtonBorderGrey: var(--GreyDark);
+   
+}
 
 body {
-    background-color: #000000D0
+    background-color: var(--BodyBackground);
 }
 
 .name-highlight {
-    color: #d67b96;
+    /*color: var(--highlight);*/
+    color: var(--TextHighlight);
 }
 
 main {
-    border-color: #373B41;
-    background-color: #000000E0
-}
-
-#bg {
-    background-color: #000;
+    border-color: var(--MainBorder);
+    background-color: var(--MainBackground);
 }
 
 h1 {
-    color: #FFF;
+    color: var(--TextMain);
 }
 
 .subtitle {
-    color: #FFF;
+    color: var(--TextMain);
 }
 
 .searchBar {
-    color: rgba(0,0,0,0);
-    border-color: lightgrey;
+    color: var(--Search);
+    border-color: var(--SearchBorder);
 }
+
+.searchBar::-webkit-input-placeholder { color: var(--Search); }
+.searchBar:-moz-placeholder           { color: var(--Search); opacity: 1; } /* Fx 4-18 */
+.searchBar::-moz-placeholder          { color: var(--Search); opacity: 1; } /* Fx 19+ */
+.searchBar:-ms-input-placeholder      { color: var(--Search); } /* IE 10+ */
+
 .searchBar:hover {
-    box-shadow: 0 0 5px #FFF;
-    border-color: #FFF;
+    box-shadow: 0 0 5px var(--White);
+    border-color: var(--White);
 }
 
-.searchBar::-webkit-input-placeholder { color: rgba(0,0,0,0); }
-.searchBar:-moz-placeholder           { color: rgba(0,0,0,0); opacity: 1; } /* Fx 4-18 */
-.searchBar::-moz-placeholder          { color: rgba(0,0,0,0); opacity: 1; } /* Fx 19+ */
-.searchBar:-ms-input-placeholder      { color: rgba(0,0,0,0); } /* IE 10+ */
-
-.searchBar:focus::-webkit-input-placeholder { color: rgba(100,100,100,1); }
-.searchBar:focus:-moz-placeholder           { color: rgba(100,100,100,1); opacity: 1; } /* Fx 4-18 */
-.searchBar:focus::-moz-placeholder          { color: rgba(100,100,100,1); opacity: 1; } /* Fx 19+ */
-.searchBar:focus:-ms-input-placeholder      { color: rgba(100,100,100,1); } /* IE 10+ */
+.searchBar:focus::-webkit-input-placeholder { color:  var(--SearchFocus);}
+.searchBar:focus:-moz-placeholder           { color: var(--SearchFocus); opacity: 1; } /* Fx 4-18 */
+.searchBar:focus::-moz-placeholder          { color: var(--SearchFocus); opacity: 1; } /* Fx 19+ */
+.searchBar:focus:-ms-input-placeholder      { color: var(--SearchFocus); } /* IE 10+ */
 /* Specyfing opacity for Fx is only resetting the defaults. Alpha from rgba will still work. */
 
 .searchBar:focus {
-    color: rgba(100,100,100,1);
+    color: var(--SearchFocus);
 }
 
 .search_google {
@@ -68,7 +100,7 @@ h1 {
 /* Grey button */
 .button_grey > a,
 .button_grey > ul {
-    border-color: #373B41;
+    border-color: var(--ButtonBorderGrey);
 }
 .button_grey > a,
 .button_grey > ul > li > a {
@@ -128,11 +160,15 @@ h1 {
 .column > a {
     text-shadow: 0 0.5px #373B41;
 }
+.column:hover > a {
+    text-shadow:0px 0px 30px #fff !important;
+}
 .column > ul > li > a {
     color: #81A2BE;
 }
 
 /* purple column highlight */
+
 .column_purple:hover > a,
 .column_purple:hover > ul > li:before {
     color: #3c3a5c;
