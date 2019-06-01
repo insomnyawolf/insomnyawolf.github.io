@@ -14,11 +14,14 @@
     --GreyLight2: #cccccc;
     --Grey: #646464;
     --GreyDark: #373B41;
+    --GreyDark2: #1D1F21;
     --Purple: #3c3a5c;
     --PurpleLight : #b9b6d9;
     --Pink: #d67b96;
     --PinkDark: #70293b;
     --GreenDark: #43644a;
+    --Green: #67e667;
+    --Green2: #269926;
     --GreenLight1: #729a64;
     --GreenLight2: #91b476;
     --BlueLight: #81A2BE;
@@ -43,8 +46,22 @@
     
     /* Button */
     /* General */
-    --Button1_Border: var(--GreyDark);
+    --Button: var(--BlueLight);
+    --Button_Border: var(--GreyDark);
+    --Button_Background: var(--GreyDark2);
+    --Button_Hover: var(--Pink);
+    --Button_Background_Hover: var(--PinkDark);
+    --Button_Border_Left: var(--GreyDark);
+    --Button_Dropdown: var(--PinkDark);
+    --Button_Dropdown_Content: var(--Pink);
     /* 1 */
+    --Button1: var(--GreenDark);
+    --Button1_Background: var(--GreenLight1);
+    --Button1_Border: var(--GreenLight2);
+    --Button1_Hover: var(--Green2);
+    --Button1_Background_Hover: var(--Green);
+    --Button1_Border_Hover: var(--Green);
+    
 
     /* Columns */
     /* General */
@@ -130,55 +147,58 @@ h1 {
 /* General Buttons */
 .button_grey > a,
 .button_grey > ul {
-    border-color: var(--Button1_Border);
+    border-color: var(--Button_Border);
 }
 .button_grey > a,
 .button_grey > ul > li > a {
-    color: #81A2BE;
-    background: #1D1F21;
+    color: var(--Button);
+    background: var(--Button_Background);
 }
 .button_grey > a:after {
-    border-left-color: #373B41;
+    border-left-color: var(--Button_Border_Left);
 }
 .button_grey:hover > a,
 .button_grey > ul > li > a:hover {
-    color: #d67b96;
-    background: #70293b;
+    color: var(--Button_Hover);
+    background: var(--Button_Background_Hover);
 }
 .button_grey:hover > a,
 .button_grey:hover > ul {
-    border-color: #70293b;
+    border-color: var(--Button_Dropdown);
 }
 .button_grey:hover > a:after {
-    border-left-color: #d67b96;
+    border-left-color: var(--Button_Dropdown_Content);
 }
 
 /* Button 1 */
 .button_green > a,
 .button_green > ul {
-    border-color: #91b476;
+    border-color: var(--Button1_Border);
 }
 .button_green > a,
 .button_green > ul > li > a {
-    color: #43644a;
-    background: #729a64;
+    color: var(--Button1);
+    background: var(--Button1_Background);
 }
 .button_green > a:after {
     border-left-color: #91b476;
 }
+
 .button_green:hover > a,
 .button_green > ul > li > a:hover {
-    color: #269926;
-    background: #67E667;
+    color: var(--Button1_Hover);
+    background: var(--Button1_Background_Hover);
 }
+
 .button_green:hover > a,
 .button_green:hover > ul {
-    border-color: #67E667;
+    border-color: var(--Button1_Border_Hover);
 }
+/*
 .button_green:hover > a:after {
     border-left-color: #269926;
 }
-
+*/
 /* column standard colors */
 .column {
     border-right-color: var(--Column_Border);
