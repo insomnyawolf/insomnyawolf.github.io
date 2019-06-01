@@ -28,6 +28,7 @@
 
     /* Items */
     /* Global */ 
+    --BaseBackground: var(--PBlack);
     /* Body */
 
     /* Main */
@@ -85,6 +86,10 @@
 
 body {
     background-color: var(--BodyBackground);
+}
+
+#bg{
+    color: var(--BaseBackground);
 }
 
 .name-highlight {
