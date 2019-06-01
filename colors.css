@@ -11,8 +11,17 @@
     --White: #FFF;
     --Pink: #d67b96;
     --GreyLight: lightgrey;
+    --GreyLight2: #cccccc;
     --Grey: #646464;
     --GreyDark: #373B41;
+    --Purple: #3c3a5c;
+    --PurpleLight : #b9b6d9;
+    --Pink: #d67b96;
+    --PinkDark: #70293b;
+    --GreenDark: #43644a;
+    --GreenLight1: #729a64;
+    --GreenLight2: #91b476;
+    --BlueLight: #81A2BE;
     --Transparent: transparent;
 
     /* Items */
@@ -33,8 +42,29 @@
     --SearchBorder: var(--GreyLight);
     
     /* Button */
-    --ButtonBorderGrey: var(--GreyDark);
-   
+    /* General */
+    --Button1_Border: var(--GreyDark);
+    /* 1 */
+
+    /* Columns */
+    /* General */
+    --Column_Border: var(--GreyDark);
+    --Column_Highlight_Shadow_Size: 50px;
+    --Column_List_Title: var(--GreyLight2);
+    --Column_List_Element: var(--BlueLight);
+    --Column_List_Element_Shadow: var(--GreenDark);
+    /* 1 */
+    --Column1_HighLight: var(--Purple);
+    --Column1_HighLight_Shadow: var(--PurpleLight);
+    --Column1_HighLight_Hover: var(--PurpleLight);
+    /* 2 */
+    --Column2_HighLight: var(--PinkDark);
+    --Column2_HighLight_Shadow: var(--Pink);
+    --Column2_HighLight_Hover: var(--Pink);
+    /* 3 */
+    --Column3_HighLight: var(--GreenDark);
+    --Column3_HighLight_Shadow: var(--GreenLight1);
+    --Column3_HighLight_Hover: var(--GreenLight2);
 }
 
 body {
@@ -97,10 +127,10 @@ h1 {
     background-image: url('resources/icons/stackoverflow.png');
 }
 
-/* Grey button */
+/* General Buttons */
 .button_grey > a,
 .button_grey > ul {
-    border-color: var(--ButtonBorderGrey);
+    border-color: var(--Button1_Border);
 }
 .button_grey > a,
 .button_grey > ul > li > a {
@@ -123,7 +153,7 @@ h1 {
     border-left-color: #d67b96;
 }
 
-/* Green button */
+/* Button 1 */
 .button_green > a,
 .button_green > ul {
     border-color: #91b476;
@@ -151,56 +181,53 @@ h1 {
 
 /* column standard colors */
 .column {
-    border-right-color: #373B41;
+    border-right-color: var(--Column_Border);
 }
 .column > a,
 .column > ul > li:before {
-    color: #cccccc;
+    color: var(--Column_List_Title);
 }
 .column > a {
-    text-shadow: 0 0.5px #373B41;
-}
-.column:hover > a {
-    text-shadow:0px 0px 30px #fff !important;
-}
-.column > ul > li > a {
-    color: #81A2BE;
+    text-shadow: 0 0.5px var(--Column_List_Element_Shadow);
 }
 
-/* purple column highlight */
+.column > ul > li > a {
+    color: var(--Column_List_Element);
+}
+
+/* column highlight 1 */
 
 .column_purple:hover > a,
 .column_purple:hover > ul > li:before {
-    color: #3c3a5c;
+    color: var(--Column1_HighLight);
 }
 .column_purple:hover > a {
-    text-shadow: 0 0.5px #b9b6d9;
+    text-shadow: 0 0.5px var(--Column_Highlight_Shadow_Size) var(--Column1_HighLight_Shadow);
 }
 .column_purple > ul > li > a:hover {
-    color: #b9b6d9;
+    color: var(--Column1_HighLight_Hover);
 }
 
-/* pink column highlight */
+/* column highlight 2 */
 .column_pink:hover > a,
 .column_pink:hover > ul > li:before {
-    color: #70293b;
+    color: var(--Column2_HighLight);
 }
 .column_pink:hover > a {
-    text-shadow: 0 0.5px #d67b96;
+    text-shadow: 0 0.5px var(--Column_Highlight_Shadow_Size) var(--Column2_HighLight_Shadow);
 }
 .column_pink > ul > li > a:hover {
-    color: #d67b96;
+    color: var(--Column2_HighLight_Hover);
 }
 
-/* green column highlight */
+/* column highlight 3 */
 .column_green:hover > a,
 .column_green:hover > ul > li:before {
-    color: #43644a;
+    color: var(--Column3_HighLight);
 }
 .column_green:hover > a {
-    text-shadow: 0 0.5px #729a64;
+    text-shadow: 0 0.5px var(--Column_Highlight_Shadow_Size) var(--Column3_HighLight_Shadow);
 }
 .column_green > ul > li > a:hover {
-    color: #91b476;
+    color: var(--Column3_HighLight_Hover);
 }
-
