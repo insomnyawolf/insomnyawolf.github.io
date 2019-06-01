@@ -1,176 +1,176 @@
 <!DOCTYPE html>
-<!--    Copyright 2014 gokoururi
-        This work is free. You can redistribute it and/or modify it under the
-        terms of the Do What The Fuck You Want To Public License, Version 2,
-        as published by Sam Hocevar. See the COPYING file for more details. -->
-        <html>
+<!--    
+    Copyright 2014 gokoururi
+    This work is free. You can redistribute it and/or modify it under the
+    terms of the Do What The Fuck You Want To Public License, Version 2,
+    as published by Sam Hocevar. See the COPYING file for more details. 
+-->
+<html>
 
-        <head>
-            <meta charset="utf-8">
-            <title>Welcome Home</title>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome Home</title>
 
-            <link rel="stylesheet" type="text/css" href="general.css" />
+    <link rel="stylesheet" type="text/css" href="general.css" />
 
-            <!-- To change theme, replace its name in following 4 lines  -->
-            <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
-            <link rel="stylesheet" type="text/css" href="colors.css" />
-            <script type="text/javascript">var mascotPath = "resources/mascot/";</script>
-            <script type="text/javascript" src="mascots.js"></script>
-            <script type="text/javascript">var backgroundPath = "resources/background/";</script>
-            <script type="text/javascript" src="backgrounds.js"></script>
+    <!-- To change theme, replace its name in following 4 lines  -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" type="text/css" href="colors.css" />
+    <script type="text/javascript">var mascotPath = "resources/mascot/";</script>
+    <script type="text/javascript" src="mascots.js"></script>
+    <script type="text/javascript">var backgroundPath = "resources/background/";</script>
+    <script type="text/javascript" src="backgrounds.js"></script>
 
-            <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-            <script type="text/javascript" src="js/mascots-control.js"></script>
-        </head>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/mascots-control.js"></script>
+</head>
 
-        <body>
-            <div id="bg"></div>
-                <main>
-                    <!-- Random mascot image will be set as background-image by javascript -->
-                    <header>
-                        <h1 class="title">Welcome to <span class="name-highlight">Insomnyawolf</span> life index.</h1>
-                        <p class="subtitle">Its not like I'm interesting or anything.</p>
-                    </header>
-                    <section class="searchContainer">
-                        <form class="searchForm" method="get" action="https://google.com/search" target="blank">
-                            <input class="searchBar search_google" type="text" name="q" placeholder="Google" search_ />
-                            <!--autofocus="autofocus"-->
-                        </form>
-                        <form class="searchForm" method="get" action="https://youtube.com/results" target="blank">
-                            <input class="searchBar search_youtube" type="text" name="search_query" placeholder="Youtube" search_ />
-                        </form>
-                        <form class="searchForm" method="get" action="https://en.wikipedia.org/w/index.php" target="blank">
-                            <input class="searchBar search_wikipedia" type="text" name="search" placeholder="Wikipedia (en)"
-                            search_ />
-                        </form>
-                        <form class="searchForm" method="get" action="https://stackoverflow.com/search" target="blank">
-                            <input class="searchBar search_stackoverflow" type="text" name="q" placeholder="StackOverflow"
-                            search_ />
-                        </form>
-                    </section>
-                    <nav>
-                        <ul class="buttonList">
-                            <li class="button button_green">
-                                <a href="http://github.com/insomnyawolf" target="blank">Github</a>
+<body>
+    <a rel="me" style="display: hidden;" href="https://niu.moe/@insomnyawolf"></a>
+    <div id="bg"></div>
+    <main>
+        <!-- Random mascot image will be set as background-image by javascript -->
+        <header>
+            <h1 class="title">Welcome to <span class="name-highlight">Insomnyawolf</span> life index.</h1>
+            <p class="subtitle">Its not like I'm interesting or anything.</p>
+        </header>
+        <section class="searchContainer">
+            <form class="searchForm" method="get" action="https://google.com/search" target="blank">
+                <input class="searchBar search_google" type="text" name="q" placeholder="Google" search_ />
+                <!--autofocus="autofocus"-->
+            </form>
+            <form class="searchForm" method="get" action="https://youtube.com/results" target="blank">
+                <input class="searchBar search_youtube" type="text" name="search_query" placeholder="Youtube" search_ />
+            </form>
+            <form class="searchForm" method="get" action="https://en.wikipedia.org/w/index.php" target="blank">
+                <input class="searchBar search_wikipedia" type="text" name="search" placeholder="Wikipedia (en)"
+                    search_ />
+            </form>
+            <form class="searchForm" method="get" action="https://stackoverflow.com/search" target="blank">
+                <input class="searchBar search_stackoverflow" type="text" name="q" placeholder="StackOverflow"
+                    search_ />
+            </form>
+        </section>
+        <nav>
+            <ul class="buttonList">
+                <li class="button button_green">
+                    <a href="http://github.com/insomnyawolf" target="blank">Github</a>
+                </li>
+                <li class="button button_grey">
+                    <a href="https://steamcommunity.com/id/insomnyawolf" target="blank">Steam</a>
+                </li>
+                <li class="button button_grey buttonArrow">
+                    <a href="#">( °Д°） ︵ /(. . \)</a>
+                    <ul>
+                        <li><a href="#">(╯°□°）╯︵ ┻━┻</a></li>
+                        <li><a href="#">┬─┬ ノ( ゜-゜ノ)</a></li>
+                        <li><a href="#">¯\_(ツ)_/¯</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="columnList">
+                <div class="row">
+                    <li class="column column_purple">
+                        <a>Projects</a>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/AkiraServerV3" target="blank">AkiraServerV3</a>
                             </li>
-                            <li class="button button_grey">
-                                <a href="https://steamcommunity.com/id/insomnyawolf" target="blank">Steam</a>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/AkiraServer" target="blank">AkiraServer</a>
                             </li>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/CLG" target="blank">CommandLineGame</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/Gonnachan" target="blank">Gonnachan</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/ImageGoHtml" target="blank">ImageGoHtml</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/ImagePyHtml" target="blank">ImagePyHtml</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/DiscordWebhook" target="blank">Discord
+                                    Webhook</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/insomnyawolf/insomnyawolf.github.io"
+                                    target="blank">insomnyawolf.github.io</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="column column_pink">
+                        <a>Most Played Games</a>
+                        <ul>
+                            <li>
+                                <a href="#">Osu</a>
+                            </li>
+                            <li>
+                                <a href="#">Stepmania</a>
+                            </li>
+                            <li>
+                                <a href="#">Counter Strike</a>
+                            </li>
+                            <li>
+                                <a href="#">Half Life</a>
+                            </li>
+                            <li>
+                                <a href="#">Metro</a>
+                            </li>
+                            <li>
+                                <a href="#">Dying Lights</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="column column_green">
+                        <a>Interest</a>
+                        <ul>
+                            <li>
+                                <a href="https://conlang.fandom.com/wiki/Hymmnos" target="blank">Hymmnos</a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank">C#</a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank">Rust</a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank">Go</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="column column_pink">
+                        <a href="#">Credits</a>
+                        <ul>
                             <li class="button button_grey buttonArrow">
-                                <a href="#">( °Д°） ︵ /(. . \)</a>
+                                <a href="#">Nagishiro Mito</a>
                                 <ul>
-                                    <li><a href="#">(╯°□°）╯︵ ┻━┻</a></li>
-                                    <li><a href="#">┬─┬ ノ( ゜-゜ノ)</a></li>
-                                    <li><a href="#">¯\_(ツ)_/¯</a></li>
+                                    <li>
+                                        <a href="#">Awesome Art</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.pixiv.net/member.php?id=8189060" target="blank">Pixiv</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://mito-nagishiro.tumblr.com/" target="blank">Tumblr</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/lemon_mito" target="blank">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/mito_nagishiro/" target="blank">Instagram</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="columnList">
-                            <div class="row">
-                                <li class="column column_purple">
-                                    <a>Projects</a>
-                                    <ul>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/AkiraServerV3" target="blank">AkiraServerV3</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/AkiraServer" target="blank">AkiraServer</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/CLG" target="blank">CommandLineGame</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/Gonnachan" target="blank">Gonnachan</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/ImageGoHtml" target="blank">ImageGoHtml</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/ImagePyHtml" target="blank">ImagePyHtml</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/DiscordWebhook" target="blank">Discord
-                                            Webhook</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/insomnyawolf/insomnyawolf.github.io"
-                                            target="blank">insomnyawolf.github.io</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="column column_pink">
-                                    <a>Most Played Games</a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Osu</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Stepmania</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Counter Strike</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Half Life</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Metro</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Dying Lights</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </div>
-                            <div class="row">
-                                <li class="column column_green">
-                                    <a>Interest</a>
-                                    <ul>
-                                        <li>
-                                            <a href="https://conlang.fandom.com/wiki/Hymmnos" target="blank">Hymmnos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="blank">C#</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="blank">Rust</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="blank">Go</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="column column_pink">
-                                    <a href="#">Credits</a>
-                                    <ul>
-                                        <li class="button button_grey buttonArrow">
-                                            <a href="#">Nagishiro Mito</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Awesome Art</a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.pixiv.net/member.php?id=8189060" target="blank">Pixiv</a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://mito-nagishiro.tumblr.com/" target="blank">Tumblr</a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://twitter.com/lemon_mito" target="blank">Twitter</a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.instagram.com/mito_nagishiro/" target="blank">Instagram</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </div>
-                        </ul>
-                    </nav>
-                </main>
-           
-        </body>
-        </html>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>

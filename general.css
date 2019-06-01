@@ -53,8 +53,11 @@ body {
     background-size: 100% 100vh;
 }
 
-/* .mascot and .plain will be added to element 'main' by javascript in
-    addition to a random mascot */
+/* 
+    .mascot and .plain will be added to element 'main' by javascript in
+    addition to a random mascot 
+*/
+
 .mascot {
     padding: 20px 20px 20px 400px;
 }
