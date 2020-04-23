@@ -1,9 +1,7 @@
 Homepage
 ====
 
-![alt tag](screenshots/preview.png "Homepage preview")
-
-**Live Demo: [Dark](http://gokoururi.github.io/homepage/) - [Light](http://gokoururi.github.io/homepage/index-light.html)**
+**Live Demo: [Dark](http://insomnyawolf.github.io/) **
 
 This repository contains a custom homepage made using html, css and javascript (jQuery). Feel free to download and modify. Comments and suggestions appreciated. Please don't expect too much.
 
@@ -12,8 +10,6 @@ Features:
 * Flashy Slidy sublinks
 * Flashy Slidy searchbars
 * Randomly selected cute 2D girls
-* Column style links.
-* **New**: Light color theme. See [Live Demo](http://gokoururi.github.io/homepage/index-light.html)
   * New directory structure for easier making and sharing themes.
 
 Customizing, adding mascots and themes
